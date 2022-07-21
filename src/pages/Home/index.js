@@ -17,7 +17,7 @@ export default function Inicio() {
                 <Navbar ccollapseOnSelect expand="lg" lassName='navbar' variant="dark" >
                     <Container>
                         <Navbar.Brand as={Link} to="/">
-                            <img src={logo} className='navbar-icon' />
+                            <img src={logo} className='navbar-icon' alt='Logo' />
                             Rick & Morty Characters</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -29,7 +29,7 @@ export default function Inicio() {
                     </Container>
                 </Navbar>
                 <Routes >
-                    <Route path='/' element={<Carrusel />} />
+                    <Route path='/' element={<Carrusel data={data} />} />
                     <Route path='/Characters' element={<ListOfCharacters data={data}/>} />
                 </Routes>
             </Router>

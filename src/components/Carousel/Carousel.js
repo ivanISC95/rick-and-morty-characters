@@ -1,25 +1,17 @@
-import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
-import getData from '../../servicces/getData';
 import '../../App.css'
-export default function Carrusel() {
-
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        getData().then(datas => setData(datas))
-    }, [])
-
+export default function Carrusel({data}) {
     return (       
         <section className='App-content'>
-            <Carousel>
+            <Carousel >
                 {
                     data.map(
                         data => (
-                            <Carousel.Item key={data.id}>
-                                <img
-                                    className="carusel-img"
+                            <Carousel.Item className='carusel-card' key={data.id}>
+                                <img     
+                                className="carusel-img"                               
                                     src={data.image}
-                                    alt="cursos"
+                                    alt={data.id}
                                 />
                                 <br></br>
                                 <Carousel.Caption className='carusel-text'>

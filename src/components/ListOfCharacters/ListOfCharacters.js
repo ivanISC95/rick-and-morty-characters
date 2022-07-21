@@ -1,4 +1,5 @@
 import { Card, Row, Col } from "react-bootstrap";
+import Details from "../../pages/Details/Details";
 export default function ListOfCharacters({ data }) {
     return (
         <section className="App-content">
@@ -17,6 +18,8 @@ export default function ListOfCharacters({ data }) {
                                     </Card.Body>
                                     <Card.Footer>
                                         <small>Status: {data.status}</small>
+                                        <br />
+                                        <Details data={data}/>
                                     </Card.Footer>
                                 </Card>
                             </Col>
