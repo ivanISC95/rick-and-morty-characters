@@ -1,6 +1,6 @@
 import { Card, Row, Col } from "react-bootstrap";
 import Details from "../../pages/Details/Details";
-export default function ListOfCharacters({ data }) {
+export default function ListOfCharacters({ data }) {    
     return (
         <section className="App-content">
             <Row xs={2} md={4} className="g-20" >

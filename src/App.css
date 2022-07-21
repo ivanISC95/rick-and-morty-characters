@@ -55,7 +55,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: gold;
-  background: url(../src/img/principal2.gif);
+  background: url(../src/img/details.gif);
+  background-size: cover;
 }
 .Details{
   width: 100%;
