@@ -5,12 +5,13 @@ import logo from '../../img/icon.gif';
 import ListOfCharacters from '../../components/ListOfCharacters/ListOfCharacters';
 import '../../App.css';
 import Carrusel from '../../components/Carousel/Carousel';
+import SearchCharacter from '../../components/SearchCharacter/SearchCharacter';
 import getData from '../../servicces/getData';
 export default function Inicio() {
-    const [data,setData] = useState([]);
-    useEffect(()=>{
-        getData().then(datas => setData(datas));
-    },[])
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        getData({keyword:''}).then(datas => setData(datas));
+    }, [])
     return (
         <div >
             <Router>
@@ -23,14 +24,15 @@ export default function Inicio() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link as={Link} to="/Characters">Characters</Nav.Link>
-                                <Nav.Link href="#link">Search Characters</Nav.Link>
+                                <Nav.Link as={Link} to="/Search">Search Characters</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
                 <Routes >
                     <Route path='/' element={<Carrusel data={data} />} />
-                    <Route path='/Characters' element={<ListOfCharacters data={data}/>} />
+                    <Route path='/Characters' element={<ListOfCharacters data={data} />} />
+                    <Route path='/Search' element={<SearchCharacter data={data} />} />
                 </Routes>
             </Router>
         </div>

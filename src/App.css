@@ -16,6 +16,19 @@
   color: rgba(14,174,87,1) ;
   padding: 16px;
 }
+.App-content-search {
+  background-color: cadetblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 95vh;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);  
+  color: black;
+  padding: 16px;
+}
 
 .navbar {
   background: black;
@@ -57,7 +70,7 @@
   margin: 10px;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background-color: rgba(243, 243, 243, 0.2);
+  background-color: rgba(243, 243, 243, 0.2);  
 }
 .Details-img{
   margin: 10px;
@@ -65,4 +78,10 @@
 .Details-imgs{  
   width: 120px;
   border-radius: 20%;
+}
+.Search-card{  
+  height: 100%;
+}
+.Search-img{  
+  height: 200px;
 }
