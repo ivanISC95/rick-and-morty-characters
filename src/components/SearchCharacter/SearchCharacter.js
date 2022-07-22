@@ -20,11 +20,11 @@ export default function SearchCharacter({ data }) {
                     <input onChange={handeChange} type='text' value={keyword} placeholder="Search here!"></input>
                 </form>
             </div>
-            <Row xs={1} md={4} className="g-1">
+            <Row xs={1} md={4} className="g-5">
                 {data.filter(person => person.name.includes(keyword)).map(data => (
-                    <Col >
+                    <Col key={data.id}>
                         <Card  key={data.id} className="Search-card">
-                            <Card.Img src={data.image} alt={data.id} className="Search-img" />
+                            <Card.Img src={data.image} alt={data.id} className="Search-img" key={data.id} />
                             <Card.Body>
                                 <Card.Title>{data.name}</Card.Title>
                                 <Card.Text>

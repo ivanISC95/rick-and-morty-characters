@@ -7,15 +7,16 @@ import '../../App.css';
 import Carrusel from '../../components/Carousel/Carousel';
 import SearchCharacter from '../../components/SearchCharacter/SearchCharacter';
 import getData from '../../servicces/getData';
-export default function Inicio() {
+
+export default function Home() {
     const [data, setData] = useState([]);
     useEffect(() => {
-        getData({keyword:''}).then(datas => setData(datas));
+        getData({keyword:0}).then(datas => setData(datas));
     }, [])
     return (
         <div >
             <Router>
-                <Navbar ccollapseOnSelect expand="lg" lassName='navbar' variant="dark" >
+                <Navbar collapseOnSelect expand="lg" variant="dark" >
                     <Container>
                         <Navbar.Brand as={Link} to="/">
                             <img src={logo} className='navbar-icon' alt='Logo' />
@@ -31,7 +32,7 @@ export default function Inicio() {
                 </Navbar>
                 <Routes >
                     <Route path='/' element={<Carrusel data={data} />} />
-                    <Route path='/Characters' element={<ListOfCharacters data={data} />} />
+                    <Route path='/Characters' element={<ListOfCharacters />} />
                     <Route path='/Search' element={<SearchCharacter data={data} />} />
                 </Routes>
             </Router>
