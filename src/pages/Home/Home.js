@@ -32,6 +32,7 @@ export default function Home() {
                 </Navbar>
                 <Routes >
                     <Route path='/' element={<Carrusel data={data} />} />
+                    <Route path='/rick-and-morty-characters/' element={<Carrusel data={data} />} />
                     <Route path='/Characters' element={<ListOfCharacters />} />
                     <Route path='/Search' element={<SearchCharacter />} />
                 </Routes>
