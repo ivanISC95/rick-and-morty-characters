@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-characters/static/css/main.19b40769.css",
-    "main.js": "/rick-and-morty-characters/static/js/main.a6968003.js",
+    "main.css": "/rick-and-morty-characters/static/css/main.999d125e.css",
+    "main.js": "/rick-and-morty-characters/static/js/main.842386ed.js",
     "static/js/787.237e2a21.chunk.js": "/rick-and-morty-characters/static/js/787.237e2a21.chunk.js",
     "static/media/details.gif": "/rick-and-morty-characters/static/media/details.e6ae92454008fe7809fb.gif",
     "static/media/princ.gif": "/rick-and-morty-characters/static/media/princ.87d4d1d43aa76256c3e6.gif",
     "static/media/icon.gif": "/rick-and-morty-characters/static/media/icon.1d5ca34057d0fba4f4bf.gif",
+    "static/media/logo1.png": "/rick-and-morty-characters/static/media/logo1.df73b7db546a5a50f92d.png",
     "index.html": "/rick-and-morty-characters/index.html",
-    "main.19b40769.css.map": "/rick-and-morty-characters/static/css/main.19b40769.css.map",
-    "main.a6968003.js.map": "/rick-and-morty-characters/static/js/main.a6968003.js.map",
+    "main.999d125e.css.map": "/rick-and-morty-characters/static/css/main.999d125e.css.map",
+    "main.842386ed.js.map": "/rick-and-morty-characters/static/js/main.842386ed.js.map",
     "787.237e2a21.chunk.js.map": "/rick-and-morty-characters/static/js/787.237e2a21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19b40769.css",
-    "static/js/main.a6968003.js"
+    "static/css/main.999d125e.css",
+    "static/js/main.842386ed.js"
   ]
 }
