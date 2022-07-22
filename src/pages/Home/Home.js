@@ -33,7 +33,7 @@ export default function Home() {
                 <Routes >
                     <Route path='/' element={<Carrusel data={data} />} />
                     <Route path='/Characters' element={<ListOfCharacters />} />
-                    <Route path='/Search' element={<SearchCharacter data={data} />} />
+                    <Route path='/Search' element={<SearchCharacter />} />
                 </Routes>
             </Router>
         </div>

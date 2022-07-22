@@ -24,7 +24,7 @@ export default function ListOfCharacters() {
         getData({ keyword: page }).then(datas => setData(datas));
     }, [page])
     return (
-        <section className="App-content">
+        <section className="App-content-characters">
             <Row xs={2} md={4} className="g-5" >
                 {
                     data.map(
